@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EladoActivity">
+
+    <TextView
+        android:id="@+id/eladoTW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/term_k_elad_sa"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <EditText
+        android:id="@+id/eladoArET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:hint="@string/ar"
+        android:inputType="text"
+        android:layout_below="@id/eladoTW"/>
+
+    <EditText
+        android:id="@+id/eladoNevET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:hint="@string/itemNev"
+        android:inputType="text"
+        android:layout_below="@id/eladoArET"/>
+
+    <EditText
+        android:id="@+id/eladoLeirasET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:hint="@string/itemLeiras"
+        android:inputType="text"
+        android:layout_below="@id/eladoNevET"/>
+
+    <EditText
+        android:id="@+id/eladoDarabET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:hint="@string/eladoMaxDb"
+        android:inputType="text"
+        android:layout_below="@id/eladoLeirasET"/>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:layout_below="@id/eladoDarabET">
+
+        <Button
+            android:id="@+id/btnChoose"
+            android:text="Kiválasztás"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:text="Feltöltés"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_button"/>
+</RelativeLayout>

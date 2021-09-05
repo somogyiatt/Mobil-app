@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopActivity">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+
+
+
+<!--
+    <ImageView
+        android:id="@+id/akacMez"
+        android:layout_width="@dimen/maxImageSize"
+        android:layout_height="@dimen/maxImageSize"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:src="@drawable/akac"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/viragpor"
+        android:layout_width="@dimen/maxImageSize"
+        android:layout_height="@dimen/maxImageSize"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:src="@drawable/viragpor"
+        app:layout_constraintTop_toBottomOf="@id/akacMez"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/propoliszosMez"
+        android:layout_width="@dimen/maxImageSize"
+        android:layout_height="@dimen/maxImageSize"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:src="@drawable/propoliszoskremmez"
+        app:layout_constraintTop_toBottomOf="@id/viragpor"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/akacMezTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:text="@string/productDescription"
+        app:layout_constraintStart_toEndOf="@id/akacMez"
+        app:layout_constraintTop_toTopOf="@id/akacMez"
+        app:layout_constraintBottom_toBottomOf="@id/akacMez"/>
+
+    <TextView
+        android:id="@+id/viragporTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:text="@string/productDescription"
+        app:layout_constraintStart_toEndOf="@id/viragpor"
+        app:layout_constraintTop_toTopOf="@id/viragpor"
+        app:layout_constraintBottom_toBottomOf="@id/viragpor"/>
+
+    <TextView
+        android:id="@+id/propoliszosMezTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:text="@string/productDescription"
+        app:layout_constraintStart_toEndOf="@id/propoliszosMez"
+        app:layout_constraintTop_toTopOf="@id/propoliszosMez"
+        app:layout_constraintBottom_toBottomOf="@id/propoliszosMez"/>
+-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

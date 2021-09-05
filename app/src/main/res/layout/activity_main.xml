@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/loginTW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loginTextView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131"
+        tools:layout_editor_absoluteX="0dp"
+        />
+
+    <EditText
+        android:id="@+id/felhasznalonevET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:hint="@string/loginFelhasznalonev"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/loginTW" />
+
+    <EditText
+        android:id="@+id/jelszoET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:hint="@string/loginJelszo"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/felhasznalonevET"/>
+
+    <Button
+        android:id="@+id/loginBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:onClick="login"
+        android:text="@string/loginBTN"
+        android:textAlignment="center"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@+id/jelszoET" />
+
+    <Button
+        android:id="@+id/googleBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:onClick="loginWithGoogleAcc"
+        android:text="@string/googleLogin"
+        android:textAlignment="center"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@+id/loginBTN" />
+
+    <Button
+        android:id="@+id/registerBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:onClick="register"
+        android:text="@string/registration"
+        android:textAlignment="center"
+        app:backgroundTint="@color/darkRed"
+        app:layout_constraintTop_toBottomOf="@+id/googleBTN"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

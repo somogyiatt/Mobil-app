@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Termelői webshop</string>
+    <string name="loginJelszo">Jelszó</string>
+    <string name="loginFelhasznalonev">Felhasználónév</string>
+    <string name="loginBTN">Bejelentkezés</string>
+    <string name="loginTextView">A webshop használatához kérem jelentkezzen be!</string>
+    <string name="registration">Regisztráció</string>
+    <string name="nev">Név</string>
+    <string name="szuletesiDatum">Születési dátum</string>
+    <string name="iranyitoSzam">Irányítószám</string>
+    <string name="Email">E-mail cím</string>
+    <string name="jelszoAgain">Jelszó ismét</string>
+    <string name="megsem">Mégsem</string>
+    <string name="varos">Város</string>
+    <string name="productDescription">Termékleírás</string>
+    <string name="googleLogin">Bejelentkezés google fiókkal</string>
+    <string name="elado">Eladó</string>
+    <string name="vasarlo">Vásárló</string>
+    <string name="regCim">Utca , Házszám, ajtó</string>
+    <string name="shopItemPrice">Ár</string>
+    <string name="shopItemInfo">Infó a termékről</string>
+    <string name="shopItemTitle">Leírás</string>
+    <string name="ar">Ár</string>
+    <string name="itemNev">Név</string>
+    <string name="itemLeiras">Leírás</string>
+    <string name="kepKivalasztas">Kép kiválasztása</string>
+    <string name="eladoMaxDb">Eladható mennyiség</string>
+    <string name="term_k_elad_sa">Termék eladása</string>
+    <string name="password">Jelszó</string>
+    <string name="name">Név</string>
+
+    <string-array name="shopItemsNames">
+        <item>Pergetőgép</item>
+        <item>Méhész ruha</item>
+        <item>Méhész kesztyű</item>
+        <item>Füstölő</item>
+        <item>Fedelezőkád</item>
+        <item>Fedelezőgép</item>
+        <item>Fekvő NB 24 kaptár</item>
+        <item>Méhanya</item>
+        <item>Méhcsalád</item>
+    </string-array>
+
+    <string-array name="shopItemsDesc">
+        <item>96-6-AG 6 keretes NB önfordítós, gépi mézpergető</item>
+        <item>Méhész ruha s,m,l,xl méretekben</item>
+        <item>Szellőző báránybőr és vászon méhészeti méhészeti kesztyű</item>
+        <item>Füstölő rozsdamentes acél hővédővel</item>
+        <item>Inox fedelezőkád</item>
+        <item>Rezgőkéses fedelezőgép</item>
+        <item>Fekvő NB 24 kaptár tartozékokkal</item>
+        <item>Idei krajnai méhanya</item>
+        <item>Méhcsalád</item>
+    </string-array>
+
+    <string-array name="shopItemRates">
+        <item>5</item>
+        <item>4.5</item>
+        <item>4</item>
+        <item>3.8</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>3.4</item>
+        <item>4</item>
+        <item>4.5</item>
+    </string-array>
+
+    <string-array name="shopItemImages">
+        <item>@drawable/pergeto</item>
+        <item>@drawable/meheszruha</item>
+        <item>@drawable/meheszkesztyu</item>
+        <item>@drawable/fustolo</item>
+        <item>@drawable/fedelezokad</item>
+        <item>@drawable/fedelezogep</item>
+        <item>@drawable/nb24kaptar</item>
+        <item>@drawable/mehanya</item>
+        <item>@drawable/mehcsalad</item>
+    </string-array>
+
+    <string-array name="shpItemPrice">
+        <item>135 399 Ft</item>
+        <item>12 549 Ft</item>
+        <item>3 220 Ft</item>
+        <item>5 450 FT</item>
+        <item>187 349 Ft</item>
+        <item>275 499 Ft</item>
+        <item>43 999 Ft</item>
+        <item>4 500 Ft</item>
+        <item>38 000 Ft</item>
+    </string-array>
+
+
+</resources>

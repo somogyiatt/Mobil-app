@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/registrationTW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/regEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationTW" />
+
+        <EditText
+            android:id="@+id/regJelszo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:hint="@string/loginJelszo"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regEmail" />
+
+        <EditText
+            android:id="@+id/regJelszoAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:hint="@string/jelszoAgain"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regJelszo" />
+
+        <EditText
+            android:id="@+id/regNev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:hint="@string/nev"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regJelszoAgain" />
+
+
+        <EditText
+            android:id="@+id/regIranyitoSzam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:hint="@string/iranyitoSzam"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regNev" />
+
+        <EditText
+            android:id="@+id/regVaros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:hint="@string/varos"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regIranyitoSzam" />
+
+        <EditText
+            android:id="@+id/regHazszam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:hint="@string/regCim"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regVaros" />
+
+
+        <TextView
+            android:id="@+id/regSzuletesiDatum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/defaultMargin"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:layout_marginRight="@dimen/defaultMargin"
+            android:onClick="dateSelect"
+            android:text="@string/szuletesiDatum"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regHazszam" />
+
+        <RadioGroup
+            android:id="@+id/userType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/defaultMargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/regSzuletesiDatum">
+
+            <RadioButton
+                android:id="@+id/vasarloRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vasarlo" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/defaultMargin"
+                android:text="@string/elado" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/defaultMargin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userType">
+
+            <Button
+                android:id="@+id/registrationBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/defaultMargin"
+                android:onClick="registration"
+                android:text="@string/registration"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/megsemBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="megsem"
+                android:text="@string/megsem"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
